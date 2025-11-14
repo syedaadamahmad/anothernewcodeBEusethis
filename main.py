@@ -1,4 +1,4 @@
-# cc main.py
+# cc main.py csv changed to json
 
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException
@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import os
-import csv
+import json
 from dotenv import load_dotenv
 from utils import model_with_tool, mongoDB, flights_loader
 from utils import rag_platform_combo_retriever
@@ -50,9 +50,9 @@ class GetOffersRequest(BaseModel):
     card_type: Optional[str] = None
     k: int = Field(5, description="Number of results")
 
-CSV_FILE_PATH = os.getenv(
-    "UPDATED_DEALS_CSV",
-    r"C:\Users\newbr\OneDrive\Desktop\backendSB_p+g2\SmartBhaiBackend\enhanced_combos.csv"
+JSON_FILE_PATH = os.getenv(
+    "UPDATED_DEALS_JSON",
+    r"C:\Users\newbr\OneDrive\Desktop\backendSB_p+g2\SmartBhaiBackend\files\enhanced_combos.json"
 )
 
 # ========================================
@@ -71,27 +71,33 @@ def chat_endpoint(request: ChatRequest):
 
 @app.get("/get_latest_deals")
 def get_latest_deals():
-    """Get deals from CSV or MongoDB fallback."""
+    """Get deals from JSON or MongoDB fallback."""
     EXPECTED_COLUMNS = [
-        "platform","title","offer","coupon_code","bank","payment_mode",
-        "url","expiry_date","terms_and_conditions","flight_type"
+        "platform", "title", "offer", "coupon_code", "bank", "payment_mode",
+        "url", "expiry_date", "flight_type", "offer_type"
     ]
     
-    # Try CSV first
+    # Try JSON first
     try:
-        if os.path.exists(CSV_FILE_PATH):
-            deals = []
-            with open(CSV_FILE_PATH, newline="", encoding="utf-8") as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    normalized = {
-                        k: (row.get(k, "") if row.get(k, None) is not None else "")
-                        for k in EXPECTED_COLUMNS
-                    }
-                    deals.append(normalized)
-            return JSONResponse(content={"deals": deals})
+        if os.path.exists(JSON_FILE_PATH):
+            with open(JSON_FILE_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            
+            # Handle both array and object with "deals" key
+            deals = data if isinstance(data, list) else data.get("deals", [])
+            
+            # Normalize each deal
+            normalized_deals = []
+            for deal in deals:
+                normalized = {
+                    k: (deal.get(k, "") if deal.get(k, None) is not None else "")
+                    for k in EXPECTED_COLUMNS
+                }
+                normalized_deals.append(normalized)
+            
+            return JSONResponse(content={"deals": normalized_deals})
     except Exception as e:
-        print(f"[get_latest_deals] CSV error: {e}")
+        print(f"[get_latest_deals] JSON error: {e}")
     
     # Fallback to MongoDB
     try:
@@ -267,6 +273,7 @@ def flight_nested_chat(request: ChatRequest):
         import traceback
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
+
 
 
 
@@ -1275,6 +1282,7 @@ def flight_nested_chat(request: ChatRequest):
 #         return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
 # except ImportError:
 #     print("⚠️ prometheus_client not installed, /metrics endpoint disabled")
+
 
 
 
