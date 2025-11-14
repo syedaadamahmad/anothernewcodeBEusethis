@@ -1,0 +1,38 @@
+platform,title,offer,coupon_code,bank,payment_mode,url,expiry_date,flight_type,offer_type
+EaseMyTrip,EaseMyTrip Domestic Discount,Flat Rs. 500 off on domestic flights,EZTDOM500,,,https://www.easemytrip.com/offers/domestic,2026-12-31,domestic,go
+EaseMyTrip,EaseMyTrip Weekend Special,Get 10% off on weekend bookings,EZTWKND,,,https://www.easemytrip.com/offers/weekend,2026-12-31,domestic,go
+EaseMyTrip,EaseMyTrip Flash Sale,Flights starting from Rs. 999,EZTFLASH,,,https://www.easemytrip.com/offers/flash,2026-12-31,domestic,go
+EaseMyTrip,HDFC EaseMyTrip Credit Card Offer,Get 10% off up to Rs. 1000 with HDFC Credit Card,HDFCEMT,HDFC,credit,https://www.easemytrip.com/offers/hdfc,2026-12-31,domestic,po
+EaseMyTrip,HDFC EaseMyTrip Debit Card Offer,Flat Rs. 300 off with HDFC Debit Card,HDFCEMTDC,HDFC,debit,https://www.easemytrip.com/offers/hdfc-debit,2026-12-31,domestic,po
+EaseMyTrip,ICICI EaseMyTrip Credit Offer,Save 12% on flights with ICICI Credit Card,ICICIEMT,ICICI,credit,https://www.easemytrip.com/offers/icici,2026-12-31,domestic,po
+EaseMyTrip,Axis Bank EaseMyTrip Special,Get Rs. 750 instant discount with Axis Bank Credit Card,AXISEMT,Axis,credit,https://www.easemytrip.com/offers/axis,2026-12-31,domestic,po
+EaseMyTrip,SBI EaseMyTrip Credit Card Deal,Enjoy 15% off up to Rs. 2000 with SBI Credit Card,SBIEMT,SBI,credit,https://www.easemytrip.com/offers/sbi,2026-12-31,domestic,po
+EaseMyTrip,SBI EaseMyTrip Debit Card Deal,Get Rs. 400 cashback with SBI Debit Card,SBIEMTDC,SBI,debit,https://www.easemytrip.com/offers/sbi-debit,2026-12-31,domestic,po
+EaseMyTrip,IDFC EaseMyTrip Credit Offer,Flat 8% off with IDFC FIRST Credit Card,IDFCEMT,IDFC,credit,https://www.easemytrip.com/offers/idfc,2026-12-31,domestic,po
+MakeMyTrip,MakeMyTrip Monsoon Sale,Get up to Rs. 1000 off on domestic flights,MMTMONSOON,,,https://www.makemytrip.com/offers/monsoon,2026-12-31,domestic,go
+MakeMyTrip,MakeMyTrip First Booking,Flat 15% off on your first flight booking,MMTFIRST,,,https://www.makemytrip.com/offers/first,2026-12-31,domestic,go
+MakeMyTrip,MakeMyTrip Group Booking,Save Rs. 2000 on group bookings (3+ passengers),MMTGROUP,,,https://www.makemytrip.com/offers/group,2026-12-31,domestic,go
+MakeMyTrip,HDFC MakeMyTrip Credit Card,Get 12% off up to Rs. 1500 with HDFC Credit Card,HDFCMMT,HDFC,credit,https://www.makemytrip.com/offers/hdfc,2026-12-31,domestic,po
+MakeMyTrip,HDFC MakeMyTrip Debit Card,Flat Rs. 500 off with HDFC Debit Card,HDFCMMTDC,HDFC,debit,https://www.makemytrip.com/offers/hdfc-debit,2026-12-31,domestic,po
+MakeMyTrip,ICICI MakeMyTrip Offer,Save 10% with ICICI Bank Credit Card,ICICIMT,ICICI,credit,https://www.makemytrip.com/offers/icici,2026-12-31,domestic,po
+MakeMyTrip,Axis Bank MakeMyTrip Special,Get Rs. 1000 instant discount with Axis Credit Card,AXISMMT,Axis,credit,https://www.makemytrip.com/offers/axis,2026-12-31,domestic,po
+MakeMyTrip,SBI MakeMyTrip Credit Deal,Enjoy 18% off up to Rs. 2500 with SBI Credit Card,SBIMMT,SBI,credit,https://www.makemytrip.com/offers/sbi,2026-12-31,domestic,po
+MakeMyTrip,SBI MakeMyTrip Debit Deal,Get Rs. 600 cashback with SBI Debit Card,SBIMMTDC,SBI,debit,https://www.makemytrip.com/offers/sbi-debit,2026-12-31,domestic,po
+MakeMyTrip,IDFC MakeMyTrip Credit,Flat 9% off with IDFC FIRST Credit Card,IDFCMMT,IDFC,credit,https://www.makemytrip.com/offers/idfc,2026-12-31,domestic,po
+Cleartrip,Cleartrip Flash Sale,Flights starting from Rs. 799,CTFLASH,,,https://www.cleartrip.com/offers/flash,2026-12-31,domestic,go
+Cleartrip,Cleartrip Weekend Getaway,Get 8% off on weekend flights,CTWKND,,,https://www.cleartrip.com/offers/weekend,2026-12-31,domestic,go
+Cleartrip,Cleartrip New User Offer,Flat 12% off for new users,CTNEW,,,https://www.cleartrip.com/offers/new,2026-12-31,domestic,go
+Cleartrip,HDFC Cleartrip Credit Card,Get 11% off up to Rs. 1200 with HDFC Credit Card,HDFCCT,HDFC,credit,https://www.cleartrip.com/offers/hdfc,2026-12-31,domestic,po
+Cleartrip,HDFC Cleartrip Debit Card,Flat Rs. 400 off with HDFC Debit Card,HDFCCTDC,HDFC,debit,https://www.cleartrip.com/offers/hdfc-debit,2026-12-31,domestic,po
+Cleartrip,ICICI Cleartrip Offer,Save 13% with ICICI Bank Credit Card,ICICICT,ICICI,credit,https://www.cleartrip.com/offers/icici,2026-12-31,domestic,po
+Cleartrip,Axis Bank Cleartrip Deal,Get Rs. 800 instant discount with Axis Credit Card,AXISCT,Axis,credit,https://www.cleartrip.com/offers/axis,2026-12-31,domestic,po
+Cleartrip,SBI Cleartrip Credit Offer,Enjoy 16% off up to Rs. 2200 with SBI Credit Card,SBICT,SBI,credit,https://www.cleartrip.com/offers/sbi,2026-12-31,domestic,po
+Cleartrip,SBI Cleartrip Debit Offer,Get Rs. 500 cashback with SBI Debit Card,SBICTDC,SBI,debit,https://www.cleartrip.com/offers/sbi-debit,2026-12-31,domestic,po
+Cleartrip,IDFC Cleartrip Credit,Flat 7% off with IDFC FIRST Credit Card,IDFCCT,IDFC,credit,https://www.cleartrip.com/offers/idfc,2026-12-31,domestic,po
+Goibibo,Goibibo Super Saver,Save up to Rs. 1500 on domestic flights,GBSAVER,,,https://www.goibibo.com/offers/saver,2026-12-31,domestic,go
+Goibibo,Goibibo App Exclusive,Get 10% off when you book via Goibibo app,GBAPP,,,https://www.goibibo.com/offers/app,2026-12-31,domestic,go
+Goibibo,HDFC Goibibo Credit Card,Get 14% off up to Rs. 1800 with HDFC Credit Card,HDFCGB,HDFC,credit,https://www.goibibo.com/offers/hdfc,2026-12-31,domestic,po
+Goibibo,HDFC Goibibo Debit Card,Flat Rs. 600 off with HDFC Debit Card,HDFCGBDC,HDFC,debit,https://www.goibibo.com/offers/hdfc-debit,2026-12-31,domestic,po
+Goibibo,Axis Bank Goibibo Special,Get Rs. 900 instant discount with Axis Credit Card,AXISGB,Axis,credit,https://www.goibibo.com/offers/axis,2026-12-31,domestic,po
+Goibibo,SBI Goibibo Credit Deal,Enjoy 20% off up to Rs. 3000 with SBI Credit Card,SBIGB,SBI,credit,https://www.goibibo.com/offers/sbi,2026-12-31,domestic,po
+Goibibo,IDFC Goibibo Credit,Flat 10% off with IDFC FIRST Credit Card,IDFCGB,IDFC,credit,https://www.goibibo.com/offers/idfc,2026-12-31,domestic,po
