@@ -52,7 +52,7 @@ class GetOffersRequest(BaseModel):
 
 JSON_FILE_PATH = os.getenv(
     "UPDATED_DEALS_JSON",
-    r"C:\Users\newbr\OneDrive\Desktop\backendSB_p+g2\SmartBhaiBackend\files\enhanced_combos.json"
+    "enhanced_combos.json"
 )
 
 # ========================================
@@ -1282,6 +1282,7 @@ def flight_nested_chat(request: ChatRequest):
 #         return Response(generate_latest(), media_type=CONTENT_TYPE_LATEST)
 # except ImportError:
 #     print("⚠️ prometheus_client not installed, /metrics endpoint disabled")
+
 
 
 
