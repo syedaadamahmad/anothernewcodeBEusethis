@@ -15,7 +15,7 @@ from langchain_core.tools import tool
 
 FLIGHTS_JSON_PATH = os.getenv(
     "FLIGHTS_JSON_PATH",
-    r"C:\Users\newbr\OneDrive\Desktop\backendSB_p+g2\flights_master.json"
+    r"C:\Users\aksha\OneDrive\Desktop\anothernewcodeBEusethis\flights_master.json"
 )
 
 AIRLINE_CODE_MAP = {
